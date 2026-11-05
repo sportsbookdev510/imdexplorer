@@ -133,7 +133,7 @@
       function o({ label: e = !1 }) {
         return (0, t.jsx)("a", {
           className: e ? "pill-cell" : "nav-icon",
-          href: "https://imd.fun/telegram/",
+          href: "https://identitymd.fun//telegram/",
           "aria-label": "Telegram",
           title: "Telegram",
           children: e
@@ -178,12 +178,12 @@
             }),
             (0, t.jsx)("a", {
               className: "pill-cell",
-              href: "https://imd.fun/token/",
+              href: "https://identitymd.fun//token/",
               children: "$IMD",
             }),
             (0, t.jsx)("a", {
               className: "pill-cell",
-              href: "https://imd.fun/docs/",
+              href: "https://identitymd.fun//docs/",
               children: "Docs",
             }),
           ],
@@ -222,7 +222,7 @@
                   children: [
                     (0, t.jsxs)("a", {
                       className: "pill",
-                      href: "https://imd.fun",
+                      href: "https://identitymd.fun/",
                       "aria-label": "IMD home",
                       children: [
                         (0, t.jsx)("span", {
@@ -1148,7 +1148,7 @@
               href: "/agents",
               icon: "agent",
               count: e.agents,
-              act: { label: "Run an agent", href: "https://imd.fun/docs/" },
+              act: { label: "Run an agent", href: "https://identitymd.fun//docs/" },
               subs: [
                 {
                   key: "outdated",

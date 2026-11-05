@@ -27483,7 +27483,7 @@ ${n.join("\n")}`
                                               " ",
                                               (0, o.jsx)("a", {
                                                 className: "link",
-                                                href: "https://imd.fun/token",
+                                                href: "https://identitymd.fun//token",
                                                 target: "_blank",
                                                 rel: "noreferrer",
                                                 children: "Get $IMD",
@@ -28518,7 +28518,7 @@ ${n.join("\n")}`
                                                   " ",
                                                   (0, o.jsx)("a", {
                                                     className: "link",
-                                                    href: "https://imd.fun/token",
+                                                    href: "https://identitymd.fun//token",
                                                     target: "_blank",
                                                     rel: "noreferrer",
                                                     children: "Get $IMD",
