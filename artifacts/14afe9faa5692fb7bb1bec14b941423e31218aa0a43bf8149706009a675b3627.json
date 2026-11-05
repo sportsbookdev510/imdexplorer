@@ -1,0 +1,509 @@
+{
+  "schema": "fpcc-ballots@1",
+  "contest": "Fren Pet costume contest (H2026), entries A-I",
+  "status": "unsupported_goal_context",
+  "summary": "No judging took place. The controller supplied no goal state, no native episode and no item/episode budget, so no worker item could be dispatched. No panel was simulated. There are no ballots, no vote totals and no winners.",
+  "missingCapability": [
+    {
+      "capability": "goal_state",
+      "expected": ".imd/reads/goal.json",
+      "found": "absent",
+      "effect": "No goal exists for this run: no goal id, no objective record, no earlier notes, no batch list, no refusals, and no statement of the items and episodes left (item/episode budget unknown, so not shown to be sufficient for 20 items)."
+    },
+    {
+      "capability": "native_episode",
+      "expected": "an orchestrator episode whose objective names the decisions-file path the plane reads, with handed results under .imd/reads/artifacts/",
+      "found": "absent: the task was delivered as a single bounded \"implement\" assignment with only the skill text and its reference as reads; no controller-designated decisions path and no .imd/reads/artifacts/ directory",
+      "effect": "A decisions file written here is read by no plane, so a spawn in it dispatches nothing; and no later episode exists in which worker results could be handed back and compiled."
+    },
+    {
+      "capability": "worker_dispatch",
+      "expected": "a way for this seat to start 20 separate goal-task worker items and receive their results with platform metadata",
+      "found": "absent: this seat has no dispatch tool or API of its own; batches are started only by the plane acting on a native episode's decisions",
+      "effect": "Twenty independent judging reports cannot be produced. Writing them in this one session would be a simulated panel, which the objective forbids."
+    }
+  ],
+  "contextInspection": {
+    "checkedAt": "2026-11-05T06:44:49Z",
+    "goalJson": {
+      "path": ".imd/reads/goal.json",
+      "present": false
+    },
+    "handedResults": {
+      "path": ".imd/reads/artifacts/",
+      "present": false
+    },
+    "readsSupplied": [
+      ".imd/reads/skills/goal-orchestrator.md",
+      ".imd/reads/skills/goal-orchestrator/REFERENCE.md"
+    ],
+    "nativeEpisode": false,
+    "controllerDesignatedDecisionsPath": null,
+    "budget": {
+      "itemsLeft": null,
+      "episodesLeft": null,
+      "sufficientFor20Items": null,
+      "note": "unknown: stated only in goal.json, which is absent"
+    },
+    "controllerStateCreatedOrModified": false
+  },
+  "entries": {
+    "eligible": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I"
+    ],
+    "layout": [
+      [
+        "A",
+        "B",
+        "C"
+      ],
+      [
+        "D",
+        "E",
+        "F"
+      ],
+      [
+        "G",
+        "H",
+        "I"
+      ]
+    ],
+    "collage": "https://fren-pet-h2026-collage.rckmtlshared.chatgpt.site/H2026-collage-A-I.png",
+    "reference": "https://fren-pet-h2026-collage.rckmtlshared.chatgpt.site/Fren-Pet-normal-appearance-reference.png",
+    "referenceIsEntry": false,
+    "reachability": {
+      "checkedAt": "2026-11-05T06:44:49Z",
+      "note": "HTTP fetch only, to tell an image fault apart from a context fault. The compiler did not view, describe or rank either image.",
+      "collage": {
+        "httpStatus": 200,
+        "contentType": "image/png",
+        "bytes": 210856
+      },
+      "reference": {
+        "httpStatus": 200,
+        "contentType": "image/png",
+        "bytes": 68429
+      }
+    }
+  },
+  "counts": {
+    "planned": 20,
+    "dispatched": 0,
+    "completed": 0,
+    "validBallots": 0,
+    "abstentions": 0,
+    "failed": 0,
+    "notDispatched": 20
+  },
+  "judges": [
+    {
+      "key": "judge-01",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-02",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-03",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-04",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-05",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-06",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-07",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-08",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-09",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-10",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-11",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-12",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-13",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-14",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-15",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-16",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-17",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-18",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-19",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    },
+    {
+      "key": "judge-20",
+      "state": "not_dispatched",
+      "worker": "unknown",
+      "model": "unknown",
+      "identitySource": "none: no platform metadata exists because no item ran",
+      "ballot": null
+    }
+  ],
+  "ballots": [],
+  "abstentions": [],
+  "missingJudges": {
+    "count": 20,
+    "keys": [
+      "judge-01",
+      "judge-02",
+      "judge-03",
+      "judge-04",
+      "judge-05",
+      "judge-06",
+      "judge-07",
+      "judge-08",
+      "judge-09",
+      "judge-10",
+      "judge-11",
+      "judge-12",
+      "judge-13",
+      "judge-14",
+      "judge-15",
+      "judge-16",
+      "judge-17",
+      "judge-18",
+      "judge-19",
+      "judge-20"
+    ],
+    "reason": "not dispatched (unsupported_goal_context); distinct from an abstention, of which there were none"
+  },
+  "identities": {
+    "repeatedWorkers": [],
+    "repeatedModels": [],
+    "distinctWorkers": null,
+    "distinctModels": null,
+    "note": "Nothing to disclose: no worker ran. Item labels judge-01..judge-20 are planned keys only and prove nothing about distinct workers."
+  },
+  "tally": {
+    "firstChoiceVotes": null,
+    "secondChoiceVotes": null,
+    "note": "No valid ballot exists, so there are no vote totals. This is not a nine-way tie at zero: the contest was not judged."
+  },
+  "results": {
+    "firstPlace": null,
+    "secondPlace": null,
+    "firstPlaceTiedLeaders": null,
+    "secondPlaceTiedLeaders": null,
+    "secondPlaceUnresolved": true,
+    "resolved": false
+  },
+  "method": {
+    "firstPlace": "most first-choice votes among valid ballots",
+    "secondPlace": "remove the unique first-place winner from each valid preference order, then tally the highest remaining choice",
+    "ties": "a first-place tie is reported as tied leaders and leaves second place unresolved; a second-place tie is reported without a tiebreak",
+    "compilerVote": false,
+    "consensusReplicas": false,
+    "oracleQuorum": false,
+    "applied": false
+  },
+  "compiler": {
+    "voteAdded": false,
+    "judgedImages": false,
+    "simulatedJudges": 0,
+    "paidOrdersOpened": 0,
+    "transactionsSent": 0,
+    "contractsDeployed": 0
+  },
+  "uncertainty": [
+    "The outcome is entirely undetermined: zero of 20 planned judges ran.",
+    "Whether a goal for this contest would have enough items and episodes left is unknown; only goal.json states it.",
+    "Whether worker items can view the two PNGs is untested; this machine only confirmed that both URLs answered HTTP 200 as image/png at the time checked.",
+    "The planned batch brief below has never been run, so it has not been shown to work; a native canary (the first five items) would show that."
+  ],
+  "plannedBatch": {
+    "dispatched": false,
+    "note": "Not a decision and not sent to any plane. It is the single research batch this objective describes, in the shape of one `spawn` entry of the skill's decisions file, kept here so a native goal episode can dispatch it as written. No table, no replicas, no ask. With 20 items and a group size of 25 the items are handed to the orchestrator as they are, so every report is preserved and no merger stands between a ballot and the tally.",
+    "briefLengthFilled": 2606,
+    "briefLimit": 3000,
+    "spawn": {
+      "name": "fpcc-judges",
+      "mode": "research",
+      "brief": "You are {{judge}}, one independent guest judge at a community costume contest for Fren Pet, a virtual pet. Produce exactly one ballot from your own inspection of the two images below. You cannot see any other judge's ballot and must not look for one.\n\nEntries (one image, nine costumes): https://fren-pet-h2026-collage.rckmtlshared.chatgpt.site/H2026-collage-A-I.png . It is a 3x3 grid read left to right, top to bottom: top row A, B, C; middle row D, E, F; bottom row G, H, I.\nReference (not an entry, never rank it): https://fren-pet-h2026-collage.rckmtlshared.chatgpt.site/Fren-Pet-normal-appearance-reference.png . It shows how a normal pet looks with no costume, so you can tell what each costume changed.\n\nDownload and actually view both images. Then rank all nine entries A to I by your overall impression, best first, with no numerical scores and no ties.\nGuidelines: creativity, a convincing costume transformation and purposeful execution. Favor visible costume-related props, coordinated pieces and inventive use beyond ordinary headwear. A costume that fully covers the original pet is allowed. An ordinary hat-only or visibly poor design is less competitive. Ignore intrinsic pet traits, rarity, backgrounds, labels and screenshot quality. Judge what is visible, not guessed effort and not how popular an entry or its owner might be.\n\nYour result is one JSON object and nothing else:\n{\"judge\":\"{{judge}}\",\"status\":\"ballot\",\"imagesInspected\":{\"collage\":true,\"reference\":true},\"observations\":{\"A\":\"...\",\"B\":\"...\",\"C\":\"...\",\"D\":\"...\",\"E\":\"...\",\"F\":\"...\",\"G\":\"...\",\"H\":\"...\",\"I\":\"...\"},\"ranking\":[\"<1st>\",\"<2nd>\",\"<3rd>\",\"<4th>\",\"<5th>\",\"<6th>\",\"<7th>\",\"<8th>\",\"<9th>\"],\"firstChoiceReason\":\"...\",\"secondChoiceReason\":\"...\",\"abstainReason\":null}\nIt must contain: \"observations\", one concrete thing you saw in each entry (a specific prop, garment, colour or shape, one sentence each); \"ranking\", each letter A to I exactly once in your complete preference order; \"firstChoiceReason\" and \"secondChoiceReason\", one or two sentences each on why ranking[0] and ranking[1] placed there.\n\nIf either image cannot be downloaded or you cannot actually see its contents, abstain: set \"status\" to \"abstain\", set \"observations\", \"ranking\" and both reasons to null, set the failing image to false in \"imagesInspected\", and say in \"abstainReason\" which image failed and how (the HTTP status or error). Never describe or rank what you did not see, and never guess from file names or from this brief.\nReport nothing about the machine you run on or about yourself. Buy nothing, open no orders and send no transactions.",
+      "items": [
+        {
+          "key": "judge-01",
+          "vars": {
+            "judge": "judge-01"
+          }
+        },
+        {
+          "key": "judge-02",
+          "vars": {
+            "judge": "judge-02"
+          }
+        },
+        {
+          "key": "judge-03",
+          "vars": {
+            "judge": "judge-03"
+          }
+        },
+        {
+          "key": "judge-04",
+          "vars": {
+            "judge": "judge-04"
+          }
+        },
+        {
+          "key": "judge-05",
+          "vars": {
+            "judge": "judge-05"
+          }
+        },
+        {
+          "key": "judge-06",
+          "vars": {
+            "judge": "judge-06"
+          }
+        },
+        {
+          "key": "judge-07",
+          "vars": {
+            "judge": "judge-07"
+          }
+        },
+        {
+          "key": "judge-08",
+          "vars": {
+            "judge": "judge-08"
+          }
+        },
+        {
+          "key": "judge-09",
+          "vars": {
+            "judge": "judge-09"
+          }
+        },
+        {
+          "key": "judge-10",
+          "vars": {
+            "judge": "judge-10"
+          }
+        },
+        {
+          "key": "judge-11",
+          "vars": {
+            "judge": "judge-11"
+          }
+        },
+        {
+          "key": "judge-12",
+          "vars": {
+            "judge": "judge-12"
+          }
+        },
+        {
+          "key": "judge-13",
+          "vars": {
+            "judge": "judge-13"
+          }
+        },
+        {
+          "key": "judge-14",
+          "vars": {
+            "judge": "judge-14"
+          }
+        },
+        {
+          "key": "judge-15",
+          "vars": {
+            "judge": "judge-15"
+          }
+        },
+        {
+          "key": "judge-16",
+          "vars": {
+            "judge": "judge-16"
+          }
+        },
+        {
+          "key": "judge-17",
+          "vars": {
+            "judge": "judge-17"
+          }
+        },
+        {
+          "key": "judge-18",
+          "vars": {
+            "judge": "judge-18"
+          }
+        },
+        {
+          "key": "judge-19",
+          "vars": {
+            "judge": "judge-19"
+          }
+        },
+        {
+          "key": "judge-20",
+          "vars": {
+            "judge": "judge-20"
+          }
+        }
+      ],
+      "output": {
+        "format": "json",
+        "maxBytes": 8000
+      },
+      "merge": {
+        "groupSize": 25,
+        "brief": "Do not merge, summarise, correct or re-rank. Return every judge's JSON object exactly as written, keyed by its item key, abstentions and failures included, and add no vote or opinion of your own."
+      }
+    },
+    "read": [
+      "fpcc-judges/judge-01",
+      "fpcc-judges/judge-02",
+      "fpcc-judges/judge-03",
+      "fpcc-judges/judge-04",
+      "fpcc-judges/judge-05",
+      "fpcc-judges/judge-06",
+      "fpcc-judges/judge-07",
+      "fpcc-judges/judge-08",
+      "fpcc-judges/judge-09",
+      "fpcc-judges/judge-10",
+      "fpcc-judges/judge-11",
+      "fpcc-judges/judge-12",
+      "fpcc-judges/judge-13",
+      "fpcc-judges/judge-14",
+      "fpcc-judges/judge-15",
+      "fpcc-judges/judge-16",
+      "fpcc-judges/judge-17",
+      "fpcc-judges/judge-18",
+      "fpcc-judges/judge-19",
+      "fpcc-judges/judge-20"
+    ],
+    "wake": {
+      "batches": [
+        "fpcc-judges"
+      ],
+      "afterMinutes": 90
+    }
+  },
+  "toRun": "Start this objective as a goal on a plane that runs goal episodes, so that an orchestrator episode is handed .imd/reads/goal.json with at least 20 items and 2 episodes left (one to dispatch, one to compile; a third if a canary pause must be resumed or failed items re-run)."
+}
